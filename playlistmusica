@@ -1,0 +1,60 @@
+#include "iostream"
+#include <cctype>
+using namespace std;
+
+class canciones{
+    private:
+      string cancion; 
+      string artista;
+      string album;
+      int fecha;
+      string duracion;
+    
+    public:
+      void addC(void);
+      void imprimirC (void);
+     // void borrarC(string &cancion);
+ };  
+
+
+void canciones:: addC(void){
+   cout <<"¡Bienvenido a BluMusic!\n Ingrese una cancion:\n ";
+   cin.ignore();
+   getline(cin,cancion);
+   cout<<"Ingrese el artista: \n";
+   getline(cin,artista);
+   cout<<"Ingrese el album: \n";
+   getline(cin,album);
+   cout<<"Ingrese el año: \n";
+   cin>>fecha;
+   cout<<"Ingrese la duración con coma: \n";
+   cin>>duracion;
+};
+
+void canciones::imprimirC(void){
+   cout <<"\nLa canción es: " << cancion<<"\nEl artista es: " <<artista;
+   cout<<"\nEl album es: " << album << "\nEl año es: "<< fecha;
+   
+}
+
+int main()
+{   
+    int numC;
+    cout<< "Ingrese el número de canciones de la playlist: " <<endl;
+    cin>>numC;
+    cin.ignore();
+    canciones song[numC];
+    for(int i=0;i<numC;i++){
+        song[i].addC();
+    }
+    for(int i=0;i<numC;i++){
+        song[i].imprimirC();
+    }
+    cout<<"\a";
+    return 0;
+    
+}
+
+
+
+
