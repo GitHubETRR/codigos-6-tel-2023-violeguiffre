@@ -19,7 +19,6 @@ class canciones{
 
 void canciones:: addC(void){
    cout <<"¡Bienvenido a BluMusic!\n Ingrese una cancion:\n ";
-   cin.ignore();
    getline(cin,cancion);
    cout<<"Ingrese el artista: \n";
    getline(cin,artista);
@@ -54,7 +53,3 @@ int main()
     return 0;
     
 }
-
-
-
-
