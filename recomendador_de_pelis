@@ -1,0 +1,163 @@
+añadir=1
+fuente= "\nFuente:Rotten Tomatoes"
+fuente2="\nFuente:IMDB"
+
+pelis_terror = ["Alien (1979)","Déjame entrar (2008)",
+                "Aliens (1986)","Tiburón (1975)",
+                "El silencio de los inocentes (1991)"]
+                
+pelis_accion = ["Salvando al soldado Ryan (1998)","Tres reyes (1999)",
+              "El tigre y el dragón (2000)","La caída del halcón negro (2001)",
+               "Héroe (2002)"]
+               
+pelis_d = ["Titanic (1997)","Contagio (2011)","Horizonte profundo (2016)",
+            "La última ola (2015)","Lo imposible (2012)"]
+            
+pelis_cf = ["2001:Odisea del espacio (1968)","Volver al futuro (1986)",
+            "Blade Runner (1982)","Metropolis(1929)",
+            "Star Wars: episodio IV- una nueva esperanza (1977)"]
+            
+pelis_com = ["Tiempos modernos (1936)","Cantando bajo la lluvia (1952)",
+             "Historias de Filadelfia (1940)","Las tres noches de Eva (1941)",
+             "La extraña pareja (1968)"]
+             
+pelis_romcom=["Sucedió una noche (1934","La gran enfermedad del amor (2017)",
+             "Historias de Filadelfia (1940)","Vacaciones en Roma (1953)",
+             "Al servicio de las damas(1936)"]
+             
+pelis_doc= ["Man on wire (2008)","Summer of Soul (...O, cuando la revolución no pudo ser televisada (2021)",
+            "No soy tu negro (2016)","Volcanes: La tragedia de Katia y Maurice Krafft (2022)",
+            "A 20 pasos de la fama (2013)"]
+            
+pelis_dram=["Black Panther (2018)","Vengadores: Endgame (2019)","Lady Bird (2017)",
+            "Mision imposible: Fallout (2018)","Ciudadano Kane (1941)"]
+            
+pelis_fant=["El sueño de Alejandría (2006)","Cazador de demonios: Solomon Kane (2009)",
+            "Conan, el bárbaro (1982)","El reino prohibido (2008)","El hechizo de Aquila (1985)"]
+
+pelis_music=["Cantando bajo la lluvia (1952)","Sombrero de copa (1935)",
+             "La rueda de la fortuna (1944)","El mago de Oz (1939)",
+             "A Hard Day's Night (1964)"]
+
+pelis_sus= ["Glass Onion: Un misterio de Knives Out (2022)","La decisión de partir (2022)",
+            "Emily la criminal (2022)", "Juegos inocentes (2021)",
+            "La hija eterna (2022)"]
+            
+pelis_anim=["Toy Story 4 (2019)","Spider-Man:Un nuevo universo (2018)",
+            "Intensamente (2015)","Coco (2017)",
+            "Blancanieves y los siete enanitos (1937)"]
+
+pelis_pol=["Érase una vez en América (1984)","Los ángeles al desnudo (1997)",
+           "Barrio chino (1974)", "La deuda (1999)","Atraco perfecto (1956)"]
+
+pelis_war=["La tumba de las luciérnagas (1988)", "Un condenado a muerte se escapa (1956)",
+          "Casablanca (1942)","La batalla de Argel (1966)", "Henry V (1989)"]
+        
+pelis_wes=["El bueno, el malo y el feo (1966)","El tesoro de la Sierra Madre (1948)",
+            "A la hora señalada (1952)","La diligencia (1939)", "Rio Bravo (1959)"]
+
+pelis_rom=["Titanic (1997)","Pretty Woman (1990)","Armageddon (1998)",
+          "Avatar (2009)", "Notting Hill (1999)"]
+        
+pelis_sad=["Algo para recordar (1957)","Despidiendo a Yang (2021)",
+           "Coco (2017)","Sociedad de los poetas muertos (1989)",
+           "El hombre elefante (1980)"]
+
+pelis_apoc=["La carretera (2009)","Llega de noche (2017)",
+            "Z for Zachariah (2015)","The Survivalist (2015)",
+            "En el bosque (2015)"]
+
+pelis_clas=["Pecadora equivocada (1940)","Los siete samuráis (1954)",
+            "La rueda de la fortuna (1944)","Cantando bajo la lluvia (1944)",
+            "Laura (1944)"]
+
+pelis_gang=["Uno de nosotros (1990)","El padrino (1972)",
+           "El padrino parte II (1974)","Infiltrados (2006)",
+            "Ciudad de Dios (2002)"]
+            
+pelis_hist=["Salvando al soldado Ryan (1998)","El gladiador (2000)",
+           "La lista de Schindler (1993)", "Diamante de Sangre (2006)",
+           "Black Hawk derribado (2001)"]
+        
+pelis_dep=["Ford V Ferrari (2019)","Creed (2015)",
+           "Yo, Tonya (2017)","El luchador (2008)",
+           "Luchando con mi familia (2019"]
+           
+pelis_nav=["La rueda de la fortuna (1944)","El bazar de las sorpresas (1940)",
+           "Los que se quedan (2023)", "Tangerine: chicas fabulosas (2015)",
+           "Milagro en la calle 34 (1947)"]
+           
+while añadir==1:
+    print ('Bienvenido a ViolePelis. Inserte qué genero de película le gustaría ver:')
+    genero=input()
+   
+    match genero:
+        case 'horror'|'terror'|'miedo':
+            print('Las peliculas más recomendadas de este género son:', pelis_terror,fuente)
+            
+        case 'acción'|'accion'|'aventura':
+            print('Las peliculas más recomendadas de este género son:',pelis_accion,fuente)
+            
+        case 'desastres naturales'|'catastrofe':
+            print('Las peliculas más recomendadas de este género son:',pelis_d,fuente)
+            
+        case 'ciencia ficcion'|'ciencia ficción'|'futurística'|'futuristica'|'futurista':
+            print('Las peliculas más recomendadas de este género son:',pelis_cf,fuente)
+            
+        case 'comedia'|'graciosas'|'humor'|'risa':
+            print('Las peliculas más recomendas de este género son: ',pelis_com,fuente)
+            
+        case 'documentales'|'documental'|'reportaje':
+            print('Las películas más recomendadas de este género son:',pelis_doc,fuente)
+            
+        case 'drama'|'dramática':
+            print('Las películas más recomendadas de este género son: ',pelis_dram,fuente)
+            
+        case 'fantasía'|'fantasia'|'fantasiosa'|'fantástico':
+            print('Las peliculas más recomendadas de este género son:',pelis_fant,fuente)
+        
+        case 'comedia musical'|'musical'|'musicales':
+            print('Las películas más recomendadas de este género son:',pelis_music,fuente)
+        
+        case 'misterio'|'suspenso'|'thriller':
+            print('Las películas más recomendadas de este género son:',pelis_sus,fuente)
+        
+        case 'animadas'|'animación'|'dibujitos'|'infantiles'|'niños':
+            print('Las películas más recomendadas de este género son:',pelis_anim,fuente)
+        
+        case 'policiales'|'policial'|'crimen'|'de asesinos':
+            print('Las películas más recomendadas de este género son:',pelis_pol,fuente2)
+            
+        case 'bélica'|'belica'|'de guerra'|'guerra':
+            print('Las películas más recomendadas de este género son:',pelis_war,fuente)
+            
+        case 'western'|'cowboys'|'lejano oeste'|'de vaqueros':
+            print('Las películas más recomendadas de este género son:',pelis_wes,fuente)
+                  
+        case 'romanticas'|'románticas'|'romántica'|'romantica'|'romance'|'de amor':
+            print('Las películas más recomendadas de este género son: ',pelis_rom,fuente)
+            
+        case 'tristes'|'triste'|'tragedia'|'trágica'|'tragica'|'melancólica'|'melancolica':
+            print('Las películas más recomendadas de este género son: ',pelis_sad,fuente)
+            
+        case 'apocalipsis'|'apocalíptica'|'apocaliptica'|'de apocalipsis':
+            print('Las películas más recomendadas de este género son: ',pelis_apoc,fuente2)
+            
+        case 'clásicos'|'clasico'|'clasicos'|'clásico':
+            print('Las películas más recomendadas de este género son: ',pelis_clas,fuente)
+            
+        case 'de gangsters'|'mafiosos'|'mafia':
+            print('Las películas más recomendadas de este género son: ', pelis_gang,fuente2)
+            
+        case 'históricas'|'historia':
+            print('Las películas más recomendadas de este género son: ', pelis_hist,fuente2)
+            
+        case 'deportivas'|'de deporte':
+            print('Las películas más recomendadas de este género son: ',pelis_dep,fuente)
+        
+        case 'navideñas'|'de navidad'|'navidad'|'navideña':
+            print('Las películas más recomendadas de este género son: ',pelis_nav,fuente)
+         
+    print('Si desea buscar de otro género presione 1, sino 0')   
+    añadir=int(input())
+            
